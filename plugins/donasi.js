@@ -5,19 +5,19 @@ let handler = async (m) => {
     if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.sender
     else who = m.sender
     let user = global.db.data.users[who]
-let anu = `*â”€â”€â”€â”€â”€Œ DONATE ã€ â”€â”€â”€*
+let anu = `*── 「 SUPPORT BOT 」 ──
 
-Hai ðŸ‘‹
-Kalian bisa mendukung saya agar bot ini tetap up to date dengan:
-â”Œã€” Donasi â€¢ Emoney ã€•
-â”œðŸ“ŒSmart: 088217843188
-â””â”€â”€â”€â”€
-Berapapun donasi kalian akan sangat berarti ðŸ‘
+Hai 👋
+Kamu bisa mendukung saya agar bot ini tetap aktif dengan:
 
+🏧 Saweria : https://saweria.co/LeonGanz
+🏧 Dana : 085608625102
+
+Berapapun donasi kalian akan sangat berarti 👍
 Arigatou!
 
 Contact person Owner:
-wa.me/6288217843188 (Owner)
+wa.me/6285608625102 (LeonGanz)
 
 *donasi via follow ig juga boleh*`
      const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
