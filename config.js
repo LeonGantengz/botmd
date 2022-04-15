@@ -41,13 +41,13 @@ global.APIKeys = { // APIKey Here
 //cari apikey sendiri ya gaes yak
 
 // Sticker WM
-global.stiker_wait = 'Stiker sedang dibuat'
-global.packname = 'stickerby'
-global.author = `Reza Temayang`
-global.wm = 'Reza Temayang'
+global.stiker_wait = 'Sabar Kak Stiker nya lagi di buat...'
+global.packname = 'Yui-Chan'
+global.author = `By LeonGanz`
+global.wm = 'LeonGanz'
 global.watermark = wm
 global.media = 'https://telegra.ph/file/72168c6f1aaa90315c369.jpg'
-global.instagram = 'https://www.instagram.com/reteam.id/'
+global.instagram = 'https://www.instagram.com/leonvx._/'
 global.fla = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=crafts-logo&doScale=true&scaleWidth=500&scaleHeight=500&fontsize=100&fillTextType=0&backgroundColor=%23401620&text='
 global.wait = '_*tunggu sedang di proses...*_'
 global.eror = '_*Server Error*_'
