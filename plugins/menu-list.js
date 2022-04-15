@@ -405,17 +405,17 @@ let help = Object.values(global.plugins).filter(plugin => !plugin.disabled).map(
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-    const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+    let message = await prepareWAMessageMedia({ video: fs.readFileSync('./media/menu.mp4')}, { upload: conn.waUploadToServer })
+     const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
      templateMessage: {
          hydratedTemplate: {
+           videoMessage: message.videoMessage,
            hydratedContentText: text.trim(),
-           locationMessage: { 
-           jpegThumbnail: fs.readFileSync('./src/welcome.jpg') },
            hydratedFooterText: wm,
            hydratedButtons: [{
             urlButton: {
                displayText: 'SOURCE CODE',
-               url: 'https://youtu.be/_HmhBUN7B-4'
+               url: 'https://youtube/c/LeonGanz'
              }
 
            },
