@@ -17,7 +17,7 @@ let handler = async (m, { conn, args, isPrems, isOwner, usedPrefix, command }) =
 ┆• *📥 Ukuran File:* ${filesizeF}
 └❏
 `.trim(), m, null, {
-    asDocument: chat.useDocument, mimetype: 'audio/mp3', ptt: false, contextInfo: {
+    asDocument: 1, contextInfo: {
         externalAdReply: {
             title: '▶︎ ━━━━━━━•────────────────── ', 
             body: 'Now Playing...',
